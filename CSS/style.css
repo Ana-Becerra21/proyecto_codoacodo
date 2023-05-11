@@ -1,0 +1,54 @@
+:root {
+    margin: 10px;
+    text-align:center;
+ } 
+
+/* CARD DESTINO */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-gap: 20px; /* espacio entre las tarjetas */
+  }
+  
+  .card-detail {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: calc(50% - 10%);
+      height: calc(50% - 10%);
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1;
+      padding: 20px;
+    }
+    
+    .card-detail h2, .card-detail p {
+      color: #fff;
+    }
+    
+    .card-detail .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+    }
+    
+    .card.show-detail .card-detail {
+      display: block;
+    }
+  
+    .card:nth-child(2n) .card-detail {
+      grid-column: 1 / span 2; /* ocupa 2 columnas */
+      grid-row: 1 / span 2; /* ocupa 2 filas */
+    }
+  
+    
+  
+    
+  
+
+
+
+
+
+

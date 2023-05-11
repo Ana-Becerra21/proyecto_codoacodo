@@ -1,0 +1,119 @@
+:root {
+  margin: 10px;
+  
+} 
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3efef;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-control.error {
+    border: 1px solid #4000ff;
+    box-shadow: none;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0088cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #005580;
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .form-control {
+      font-size: 16px;
+    }
+    
+    label {
+      font-size: 16px;
+    }
+    
+    .btn {
+      font-size: 16px;
+    }
+  }*/
+
+  
+  /*CONTACTOS*/
+
+  #registro-form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  #registro-form label {
+    font-weight: bold;
+  }
+  
+  #registro-form input[type="text"],
+  #registro-form input[type="email"],
+  #registro-form input[type="tel"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  
+  #registro-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #registro-form button:hover {
+    background-color: #3e8e41;
+  }
+  
+  
+  

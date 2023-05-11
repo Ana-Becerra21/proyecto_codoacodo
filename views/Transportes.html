@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
+    <link rel="stylesheet" type="text/css" href="../Servicios/style.css">
+    
+
+</head>
+
+
+<body>
+
+    
+    
+    <!-- Navbar -->
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Travellers</h1>
+        
+        <ul class="menu__links">
+            <li class="menu__item">
+                <a href="../index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item menu__item--show">
+               <a href="#" class="menu__link">Servicios<img src="../assets/arrow.svg" class="menu__arrow"></a>
+
+               <ul class="menu__nesting menu__nesting--visible">
+                <li class="menu__inside">
+                    <a href="./Destino.html" class="menu__link menu__link--inside">Destinos</a>
+                </li>
+                <li class="menu__inside">
+                    <a href="./Alquileres.html" class="menu__link menu__link--inside">Alquileres</a>
+                </li>
+                <li class="menu__inside active" aria-current="page">
+                    <a id="destinos-menu" href="" class="menu__link menu__link--inside">Transportes</a>
+                </li>
+               </ul>
+            </li>
+            <li class="menu__item">
+               <a  href="./contactos.html" class="menu__link">Contacto</a>
+            </li>
+            <li class="menu__item">
+               <a href="./Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
+            </li>
+        </ul>
+        <div class="menu__hamburguer">
+            <img src="./menu.svg" class="menu__img">
+
+        </div>
+    </section>
+
+    </nav>
+</header>
+
+       <div id="presentacion">
+            <h1>Transportes</h1>
+        </div> 
+            
+    <main>
+        <div class="buscador">
+            <dl>
+                <dt><b>¿Que buscás?</b></dt> <!-- sacar puntos de lista?-->
+                <dd><a>Alojamiento</a> <!-- Que nos dirija a pagina donde se publican campings, gente que busca comaprtir habi etc etilo arbnb? --></dd>
+                <dd><a>Compartir Transporte</a> <!-- Que nos dirija a ultimas publicaciones de gente que busca compartir viaje,¿. Dentro que tenga unfiltro de busqueda por destino--></dd>
+                <dd><a>Compartir Experiencia</a> <!-- gente que busca conocer gente para dirijirse a su proximo destino--></dd>
+            </dl>
+            <dl>
+                <dt><b>Destinos en:</b></dt>
+                <dd><a>Buenos Aires</a></dd>
+                <dd><a>Santa Cruz</a></dd>
+                <dd><a>Mendoza</a></dd>
+                <dd><a>Ver más</a></dd>
+            </dl>
+        </div>
+
+        
+        <div class="contenido">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia excepturi placeat necessitatibus sit quas alias, magnam est magni aliquid ducimus quod. Itaque nulla voluptatem assumenda. Tenetur numquam porro, distinctio nostrum maiores facere! Accusantium at necessitatibus ut voluptatum illum enim, vitae esse id repudiandae, illo reiciendis neque tempore provident quasi. Omnis non voluptate aliquam fugit fuga sint tempore. Facilis, in deserunt!
+            </div>
+
+            <div class="opiniones"> <!-- Poner opiniones de usuarios -->
+                <p>Opiniones</p>
+                <section><p>Beatriz Juan</p><p id="opinion"><i>"Gracias a Travellers hice el camino desde El Calafate hasta El Chaltén junto un un hermoso grupo de personas, nos ayudó a dividir gastos ya duplicar la diversion!</i></p></section>
+            </div>
+    </main>
+    <footer>
+       <i>2023 Travellers, Inc.</i>
+       <a href="#">Contacto</a> <!-- Lleva a pag con formulario para contactar  -->
+       <a href="#">Sobre Nosotros</a> <!-- Lleva a otra pagina about us -->
+       <a href="https://www.flaticon.com/free-icons/tour" title="tour icons">Tour icons created by Freepik - Flaticon</a><!-- copyright etc --> 
+       
+    </footer>
+   
+    <script type="text/javascript" src="../JS/nav.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

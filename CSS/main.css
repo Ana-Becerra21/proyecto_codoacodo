@@ -1,0 +1,104 @@
+:root {
+  margin: 10px;
+  text-align:center;
+} 
+/* Estilos Iniciar Sesion */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilos específicos para el formulario de inicio de sesión */
+  .login-form {
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .login-form p {
+    margin-bottom: 2rem;
+  }
+
+  /* TARJETA ALQUILER */
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .card-image {
+    width: auto;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+
+  
+   
+  
+
+ 
+
+  
+  
