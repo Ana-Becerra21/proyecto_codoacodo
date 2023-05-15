@@ -172,7 +172,7 @@ body{
 }*/
       
 #presentacion {
-  background-color:aliceblue; /* Poner imagen de fondo de montaña o lo que sea */
+  background-color:aliceblue; 
   padding: 30px;
   text-align: center;
   
@@ -196,15 +196,6 @@ header {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
 }
-
-/*main {
-  display: grid;
-  padding: 8px;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  font-family: 'Comfortaa', cursive; //para más texto 
-
-}*/
 
 .opiniones{
   display:flex;

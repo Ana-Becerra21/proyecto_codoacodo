@@ -73,9 +73,9 @@ body {
     grid-gap: 20px;
     padding-top: 30px;
     padding-bottom: 15px;
-  }
+}
   
-  .card {
+.card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,16 +85,26 @@ body {
     font-weight: bold;
     color: white;
     text-align: center;
-  }
-  
-  .red {
-    background-color: aliceblue;
-  }
-  
-  .green {
-    background-color: aliceblue;
-  }
-  
-  .blue {
-    background-color: aliceblue;
-  }
+    max-width: 100%;
+    height: auto;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.green {
+    background-color:  white; 
+
+}
+
+.red {
+    background-color: white;
+}
+
+.blue {
+background-color: whitesmoke;
+}
