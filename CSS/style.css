@@ -4,11 +4,13 @@
     
  } 
 
-/* CARD DESTINO */
+/* -------------------- CARD DESTINO ---------------------------------- */
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columnas */
   grid-gap: 20px; /* espacio entre las tarjetas */
+  margin: 50px;
+  padding-bottom: 50px;
 }
   
 .card {
@@ -67,7 +69,13 @@ footer {
   width: 100%;
 }
   
-    
+.introduccion {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+}
+
   
 
 

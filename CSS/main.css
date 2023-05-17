@@ -4,20 +4,11 @@
 } 
 
 
-.introduccion {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 0px;
-}
-
-.introduccion hr {
-  width: 40%;
-  margin: auto;
-}
 
 
-/* CARD HOME */
+
+
+/*  ------------------------------ CARD HOME  ------------------------------------ */
 
 .grid-container {
   margin: 30px;
@@ -62,7 +53,9 @@
 background-color: whitesmoke;
 }
 
-/* Estilos Iniciar Sesion */
+
+/* -------------------- Estilos Iniciar Sesion  -------------------------*/
+
 .form-container {
   max-width: 500px;
   margin: 0 auto;
@@ -120,12 +113,13 @@ button:hover {
   margin-bottom: 2rem;
 }
 
-/* TARJETA ALQUILER */
+/* -----------------------TARJETA ALQUILER ----------------------*/
 
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  margin: 50px;
 }
 
 .card {
