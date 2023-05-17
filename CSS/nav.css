@@ -12,13 +12,21 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
-/* Nav */
+
+/* ------------------------ Nav -------------------------------- */
 .menu{
   background-color: rgb(57,106,177);
   color: yellow;
-  height: 70px;
+  height: 90px;
   
 }
+
+.menu__logo {
+  font-size: 3em;
+}
+
+
+
 .menu__container{
   display: flex;
   justify-content: space-between;
@@ -33,6 +41,7 @@ body{
   height: 100%;
   transition: transform 5s;
   display: flex;
+  font-size: 2em;
 }
 .menu__item{
   list-style: none;

@@ -62,6 +62,7 @@
   grid-row: 1 / span 2; /* ocupa 2 filas */
 }
 
+/*------------------------------- FOOTER -----------------------------*/
 footer {
   position: fixed;
   bottom: 0;
