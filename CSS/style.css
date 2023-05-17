@@ -59,6 +59,13 @@
   grid-column: 1 / span 2; /* ocupa 2 columnas */
   grid-row: 1 / span 2; /* ocupa 2 filas */
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  min-height: 70px;
+  width: 100%;
+}
   
     
   

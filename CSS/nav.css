@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
 :root {
-  margin: 10px;
+  margin: 0px;
   text-align:center;
 } 
 *{
@@ -172,21 +172,12 @@ body{
 }*/
       
 #presentacion {
-  background-color:aliceblue; 
-  padding: 30px;
+  background-color:white; 
+  padding: 15px;
   text-align: center;
   
 }
 
-.buscador {
-  padding: 10px;
-  font-size: 1em;
-  text-align: center;
-  border: solid;
-  border-color: burlywood;
-  border-radius: 15px;
-  font-family: 'Patrick Hand', cursive; /*amigable pero no tanta lectura*/
-}
 
 .contenido {
   padding-top: 10px;
@@ -196,19 +187,6 @@ header {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
 }
-
-.opiniones{
-  display:flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  justify-content: center;
-  
-}
-
-#opinion {
-  font-family: 'Indie Flower', cursive; /* para comentarios, opiniones*/
-}
-
 
 a:link {
   color: rgb(57,106,177);
