@@ -67,8 +67,8 @@ background-color: whitesmoke;
   grid-template-columns: repeat(3, 40%);
   column-gap: 10%;
   max-width: 70%;
- 
-  
+
+
 }
 
 .opinion-card {

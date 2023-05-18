@@ -96,7 +96,7 @@ body{
   }
 
   .menu__link--inside{
-    padding: 10px 20px 10px 10px;
+    padding: 10px 9px 10px 9px;
   }
 
   .menu__link--inside:hover{
@@ -180,6 +180,8 @@ body{
     }
 }*/
       
+
+
 #presentacion {
   background-color:white; 
   padding: 15px;
