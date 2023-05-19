@@ -9,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+footer{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -18,6 +18,12 @@ body{
   background-color: rgb(57,106,177);
   color: yellow;
   height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  
   
 }
 
@@ -88,9 +94,12 @@ body{
    bottom: 0;
    width: max-content;
    transform: translateY(100%);
-   background-color: #5e7094;
+   background-color: rgb(57,106,177);
    display: none;
+   z-index: 1;
   }
+
+
   .menu__nesting--visible{
     display: block;
   }
@@ -100,7 +109,7 @@ body{
   }
 
   .menu__link--inside:hover{
-    background-color: #798499;
+    background-color: rgb(57,106,177);
   }
 
   .menu__hamburguer{
@@ -115,86 +124,36 @@ body{
   .menu__img{
     display: block;
     width: 36px;
-  }
-
-/*Media queries 
-
-  @media (max-width:800px){
-     .menu__hamburguer{
-      display: flex;
-
-      }
-
-      .menu__item{
-        --clip:0;
-        overflow:hidden ;
-      }
-
-      .menu__item--active{
-        --transform: rotate(0);
-        --background: #5e7094;
-      }
-
-      .menu__item--show{
-        background-color: var(--background);
-      }
-      
-      .menu__links{
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #000;
-        overflow-Y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-      }
+  
     
-
-    .menu__link{
-       padding: 25px 0;
-       padding-left: 30;
-       height: auto;
-
-    }
-
-    .menu__arrow{
-      margin-left: auto;
-      margin-right: 20px;
-    }
-
-    .menu__nesting{
-      display: grid;
-      position: unset;
-      width: 100%;
-      transform: translateY(0);
-      height: 0;
-      transition: height .3s                                                                     ;
-    }
-    .menu__link--inside{
-      width: 90%;
-      margin-left: auto;
-      border-left: 1px solid #798499;
-    }
-}*/
-      
+  }
+  
 #presentacion {
   background-color:white; 
-  padding: 15px;
+  padding: 30px;
   text-align: center;
+  margin-top: 90px ;
+  ;
+  position: relative;
+  z-index: 1;
   
 }
+.info{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 15px;
+  
+  color: rgb(57,106,177);
+}
+
 
 
 .contenido {
   padding-top: 10px;
 }
 
-header {
+main{
   font-family: 'Oswald', sans-serif;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 a:link {
