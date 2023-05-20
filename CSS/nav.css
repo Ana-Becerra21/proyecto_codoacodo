@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
 :root {
   margin: 0px;
   text-align:center;
@@ -17,7 +15,7 @@ footer{
 .menu{
   background-color: rgb(57,106,177);
   color: yellow;
-  height: 90px;
+  height: 87px;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,7 +37,7 @@ footer{
   align-items: center;
   width: 90%;
   max-width: 1200px;
-  height: 100%x;
+  height: 100%;
   margin: auto;
 }
 
@@ -47,7 +45,7 @@ footer{
   height: 100%;
   transition: transform 5s;
   display: flex;
-  font-size: 2em;
+  font-size: 1.3em;
 }
 .menu__item{
   list-style: none;
@@ -71,16 +69,18 @@ footer{
 }
 
 .menu__link{
-  color: #fff;
+
   text-decoration: none;
   padding: 20px;
   display: flex;
   height: 100%;
   align-items: center;
+  
 }
 
 .menu__link:hover{
-  background-color: #5e7094;
+  background-color: #8d989a;
+  
 }
 
 
@@ -112,62 +112,104 @@ footer{
     background-color: rgb(57,106,177);
   }
 
-  .menu__hamburguer{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    cursor: pointer;
+  #menu, #menu-check{
     display: none;
   }
 
-  .menu__img{
-    display: block;
-    width: 36px;
-  
+  #presentacion {
+    background-color:white; 
+    padding: 30px;
+    text-align: center;
+    margin-top: 90px ;
+    position: relative;
+    z-index: 1;
     
   }
+  .info{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 15px;
+    color: rgb(57,106,177);
+  }
   
-#presentacion {
-  background-color:white; 
-  padding: 30px;
-  text-align: center;
-  margin-top: 90px ;
-  ;
-  position: relative;
-  z-index: 1;
+  .contenido {
+    padding-top: 10px;
+  }
   
-}
-.info{
-  font-family: 'Poppins', sans-serif;
-  padding-top: 15px;
+  main{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+  }
   
-  color: rgb(57,106,177);
-}
+  a:link {
+    color: rgb(57,106,177);
+  }
+  
+  a:visited {
+    color: rgb(236,97,159)
+  }
+  
+  a:hover{ 
+    color: rgb(119,200,208)
+  }
+  
+  a:active {
+    color:rgb(33,164,143);
+  }
+
+ 
+  
 
 
 
-.contenido {
-  padding-top: 10px;
-}
 
-main{
-  font-family: 'Oswald', sans-serif;
-  font-size: 15px;
-}
+ 
 
-a:link {
-  color: rgb(57,106,177);
-}
+  /*@media only screen and (max-width:700px){
+    nav.menu div.contenedor{
+      display: flex;
+      place-content: space-between;
 
-a:visited {
-  color: rgb(236,97,159)
-}
+    }
+    #menu-check:not(:checked) ~ div.contenedor{
+      display: none;
+    }
+    #menu-check:checked ~ div.contenedor{
+      display: block;
+    }
+    #menu{
+      display: block;
+      color: #5e7094;
+      background-color: azure;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: 3px solid yellow;
+      border-radius: 0.3em;
+      position: absolute;
+      right: 0.5em;
+      top: 5.5em;
 
-a:hover{ 
-  color: rgb(119,200,208)
-}
-
-a:active {
-  color:rgb(33,164,143);
-}
+    }
+    #menu:hover{
+      color: aqua;
+      background: #4f0cf9;
+    }
+    #menu-cerrar {
+      display: none;
+    }
+    #menu-check:checked ~ label #menu-abrir{
+      display: none;
+    }
+    #menu-check:checked ~ label #menu-cerrar{
+      display: block;
+  }
+  nav div.contenedor{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #4f0cf9;
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    color: #5e7094;
+  }
+}*/

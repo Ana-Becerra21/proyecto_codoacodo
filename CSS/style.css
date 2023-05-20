@@ -33,24 +33,24 @@
 .card-detail {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
   width: calc(50% - 10%);
-  height: calc(50% - 10%);
+  height: calc(55% - 5%);
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
   padding: 20px;
+  
 }
 
 .card-detail h2, .card-detail p {
   color: #fff;
+  text-align: center;
 }
 
 .card-detail .close-btn {
   position: absolute;
-  top: 20px;
+  top: 5px;
   right: 20px;
-  color: #fff;
+  color: #e60909;
 }
 
 .card.show-detail .card-detail {
