@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Travellers</title>
     <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
     <link rel="stylesheet" type="text/css" href="../Servicios/style.css">
     
@@ -24,8 +25,8 @@
     <header>
     <nav class="menu">
         <section class="menu__container">
+            <img class="logo" src="../img/ubicacion-logo.png" height="60" alt="logo">
             <h1 class="menu__logo">Travellers</h1>
-        
         <ul class="menu__links">
             <li class="menu__item">
                 <a href="../index.html" class="menu__link">Home</a>
@@ -52,6 +53,11 @@
                <a href="./Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
             </li>
         </ul>
+        <div id="weather-container">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+          </div>
         
     </section>
 
@@ -65,7 +71,12 @@
             
     
         <div class="buscador">
+            <div>
+                <br>
+                <a href="./Destino.html">otros destinos</a></button>
+            </div>
             <dl>
+                
                 <dt><b>¿Que buscás?</b></dt> <!-- sacar puntos de lista?-->
                 <dd><a>Alojamiento</a> <!-- Que nos dirija a pagina donde se publican campings, gente que busca comaprtir habi etc etilo arbnb? --></dd>
                 <dd><a>Compartir Transporte</a> <!-- Que nos dirija a ultimas publicaciones de gente que busca compartir viaje,¿. Dentro que tenga unfiltro de busqueda por destino--></dd>

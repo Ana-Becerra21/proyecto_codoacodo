@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Travellers</title>
     <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/contacto.css">
     
     
 
@@ -21,8 +21,8 @@
 <header>
     <nav class="menu">
         <section class="menu__container">
-            <h1 class="menu__logo">Travellers</h1>
-        
+          <img class="logo" src="../img/ubicacion-logo.png" height="60" alt="logo">
+          <h1 class="menu__logo">Travellers</h1>
         <ul class="menu__links">
             <li class="menu__item">
                 <a href="../index.html" class="menu__link">Home</a>
@@ -49,6 +49,11 @@
                <a href="./Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
             </li>
         </ul>
+        <div id="weather-container">
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <p id="humidity"></p>
+        </div>
        
     </section>
 

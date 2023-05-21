@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/carrousel.css">
-    <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Travellers</title>
-    <script type="text/javascript" src="./JS/nav.js" defer></script>
-    <script type="text/javascript" src="./JS/script.js" defer></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/carrousel.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    
+    
    </head>
    
 <body>
     <!-------------------------------------NAV BAR -->
     <nav class="menu">
+        
         <section class="menu__container">
+            <img class="logo" src="./img/ubicacion-logo.png" height="60" alt="logo">
             <h1 class="menu__logo">Travellers</h1>
+            
             <input type"checkbox" id="menu-check">
             <label id="menu" for="menu-check">
                 
@@ -32,6 +33,7 @@
 
             </label>
         <div class="contenedor">
+            
             <ul class="menu__links">
                 <li class="menu__item active" aria-current="page">
                     <a href="./index.html" class="menu__link" >Home</a>
@@ -58,11 +60,18 @@
                 <a href="views/Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
                 </li>
             </ul>
+            
+            
         </div>
-
+        <div id="weather-container">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+          </div>
             
         </section>
     </nav>
+    
 
     <header>
 
@@ -114,6 +123,10 @@
     </header>
     
     <main>
+        <body>
+           
+        
+
         <div class="info">
             <h2>informacion de la empresa</h2>
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aspernatur corrupti dolorum reprehenderit? Quos, quo aperiam ea voluptate nam voluptates error amet debitis neque rem consectetur nemo autem exercitationem corrupti quidem laboriosam possimus velit, assumenda iure. Eligendi est, neque optio, pariatur ullam quo eius nihil, iste quisquam debitis numquam eum!
@@ -196,8 +209,9 @@
         </div>
       </footer>
 
-    <script type="text/javascript" src="JS/script.js"></script>
-    <script type="text/javascript" src="JS/nav.js"></script>
+      <script type="text/javascript" src="./JS/nav.js" defer></script>
+    <script type="text/javascript" src="./JS/script.js" defer></script>
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>

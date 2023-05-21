@@ -1,5 +1,5 @@
 :root {
-  margin: 0px;
+  margin: 10px;
   text-align:center;
 } 
 *{
@@ -7,15 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-footer{
-  font-family: 'Poppins', sans-serif;
-}
+
 
 /* ------------------------ Nav -------------------------------- */
+
+
 .menu{
   background-color: rgb(57,106,177);
   color: yellow;
-  height: 87px;
+  height: 95px;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,9 +25,21 @@ footer{
   
 }
 
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1px; 
+}
+
 .menu__logo {
   font-size: 3em;
+  padding-right: 80px;
+  padding-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
 }
+
 
 
 
@@ -71,9 +83,9 @@ footer{
 .menu__link{
 
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
   display: flex;
-  height: 100%;
+  height: 50%;
   align-items: center;
   
 }
@@ -115,6 +127,40 @@ footer{
   #menu, #menu-check{
     display: none;
   }
+  
+  /* API TEMPERATURA*/
+  
+  #weather-container {
+    background-color: #d50707;
+    border-radius: 5px;
+    padding: 15px;
+    float: right; 
+    margin-top: 0;
+    margin-right: 0; 
+    
+    
+  }
+  
+  #temperature {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 0;
+  }
+  
+  #description {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  #humidity {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /*------------*/
+  
+  
+  
 
   #presentacion {
     background-color:white; 
@@ -154,6 +200,10 @@ footer{
   
   a:active {
     color:rgb(33,164,143);
+  }
+
+  footer{
+    font-family: 'Poppins', sans-serif;
   }
 
  

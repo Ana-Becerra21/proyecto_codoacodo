@@ -1,11 +1,13 @@
 :root {
     margin: 10px;
     text-align:center;
- } 
-body {
+  } 
+  *{
     margin: 0;
-    font-family: Arial, sans-serif;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .carousel {
     width: 100%;
     height: 400px;
