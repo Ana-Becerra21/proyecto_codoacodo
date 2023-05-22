@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Lilita+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Travellers</title>
     <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
    
@@ -16,9 +17,11 @@
 
 <body>
    <!-- Navbar -->
+   <header>
     <nav class="menu">
         <section class="menu__container">
-            <h1 class="menu__logo">Travellers</h1>
+          <img class="logo" src="../img/ubicacion-logo.png" height="60" alt="logo">
+          <h1 class="menu__logo">Travellers</h1>
         
         <ul class="menu__links">
             <li class="menu__item">
@@ -46,76 +49,94 @@
                <a href="./Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
             </li>
         </ul>
-        <div class="menu__hamburguer">
-            <img src="./menu.svg" class="menu__img">
-
+        <div id="weather-container">
+          <p id="temperature"></p>
+          <p id="description"></p>
+          <p id="humidity"></p>
         </div>
+        
     </section>
 
     </nav>
 </header>
-
+<main>
        <div id="presentacion">
             <h1>Destinos</h1>
             <p>¿Donde va a ser tu próxima aventura?</p>
             <!--   HACER UN FILTRO POR LUGAR CUANDO HAGAMOS BACKEND  -->
         </div> 
             
-    <main>
+    
 
       <div class="card-container">
 
         <div class="card">
           <img src="../img/mendoza.jpeg" alt="Imagen" class="card-image">
+          
           <div class="card-detail">
             <h2>Mendoza, Argentina</h2>
             <p>Descripción</p>
-            <a href="#" class="close-btn">Cerrar</a>
+            <a href="./Transportes.html">cotizar</a>
+            
           </div>
         </div>
 
         <div class="card">
           <img src="../img/cataratas-del-iguazu.jpg" alt="Cataratas del Iguaz" class="card-image">
+          
           <div class="card-detail">
             <h2>Cataratas del Iguazú, Misiones, Argentina</h2>
             <p>Descripción</p>
-            <a href="#" class="close-btn">Cerrar</a>
+            <a href="./Transportes.html">cotizar</a>
+           
+            
           </div>
         </div>
 
         <div class="card">
           <img src="../img/el-chalten.jpg" alt="El Chaltén" class="card-image">
+          
+
           <div class="card-detail">
             <h2>EL Chaltén, Santa Cruz, Argentina</h2>
             <p>Descripción</p>
-            <a href="#" class="close-btn">Cerrar</a>
+            <a href="./Transportes.html">cotizar</a>
+            
+            
           </div>
         </div>
 
         <div class="card">
           <img src="../img/cerro-7-colores-purmamarca.jpg" alt="Purmamarca" class="card-image">
+        
           <div class="card-detail">
             <h2>Pumamarca, Jujuy, Argentina</h2>
             <p>Descripción</p>
-            <a href="#" class="close-btn">Cerrar</a>
+            <a href="./Transportes.html">cotizar</a>
+           
+            
           </div>
         </div>
 
         <div class="card">
           <img src="../img/Calafate.png" alt="El Calafate" class="card-image">
+         
           <div class="card-detail">
             <h2>EL Calafate, Santa Cruz, Argentina</h2>
             <p>Descripción</p>
-            <a href="#" class="close-btn">Cerrar</a>
+            <a href="./Transportes.html">cotizar</a>
+            
           </div>
         </div>
         
         <div class="card">
           <img src="../img/Llao-Llao.jpg" alt="Hotel Llao Llao" class="card-image">
+         
           <div class="card-detail">
             <h2>Bariloche, Chubut, Argentina</h2>
             <p>Descripción</p>
-            <a href="#" class="close-btn">Cerrar</a>
+            <a href="./Transportes.html">cotizar</a>
+            
           </div>
         </div>
 

@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Lilita+One&family=Patrick+Hand&display=swap');
+
 :root {
-    margin: 0px;
-    text-align:center;
-    
- } 
+  margin: 10px;
+  text-align:center;
+} 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* -------------------- CARD DESTINO ---------------------------------- */
 .card-container {
@@ -21,6 +27,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   overflow: hidden;
 }
 
@@ -30,27 +37,31 @@
   position: relative;
 }
 
-.card-detail {
+
+/*.card-detail {
   display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: calc(50% - 10%);
-  height: calc(50% - 10%);
+  height: calc(55% - 5%);
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
   padding: 20px;
 }
 
-.card-detail h2, .card-detail p {
+.card-detail h2,
+.card-detail p {
   color: #fff;
+  text-align: center;
 }
 
 .card-detail .close-btn {
   position: absolute;
-  top: 20px;
+  top: 5px;
   right: 20px;
-  color: #fff;
+  color: #e60909;
 }
 
 .card.show-detail .card-detail {
@@ -58,8 +69,99 @@
 }
 
 .card:nth-child(2n) .card-detail {
-  grid-column: 1 / span 2; /* ocupa 2 columnas */
-  grid-row: 1 / span 2; /* ocupa 2 filas */
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+
+/*.card-detail {
+  display: none;
+  position: fixed;
+  width: calc(50% - 10%);
+  height: calc(55% - 5%);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  padding: 20px;
+  
+}
+
+.card-detail h2, .card-detail p {
+  color: #fff;
+  text-align: center;
+}
+
+.card-detail .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  color: #e60909;
+}
+
+.card.show-detail .card-detail {
+  display: block;
+}
+
+.card:nth-child(2n) .card-detail {
+  grid-column: 1 / span 2; 
+  grid-row: 1 / span 2; 
+}*/
+
+/*@keyframes card-hover {
+  from {
+    transform: scale(1);
+    z-index: 1;
+  }
+  to {
+    transform: scale(2);
+    z-index: 2;
+  }
+}
+
+.card {
+  position: relative;
+  background-color: #ccc;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  animation-name: card-hover;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}*/
+
+@keyframes card-hover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+
+
+.card-detail {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  padding: 20px;
+  box-sizing: border-box; 
+  color: #fff; 
+  text-align: center; 
+}
+
+.card:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+
+.card:hover .card-detail {
+  display: block;
 }
 
 .iframe {

@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Lilita+One&family=Patrick+Hand&display=swap');
+
+
 :root {
     margin: 10px;
     text-align:center;
- } 
-body {
+  } 
+  *{
     margin: 0;
-    font-family: Arial, sans-serif;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .carousel {
     width: 100%;
     height: 400px;
     position: relative;
     overflow: hidden;
+    margin-top: 90px;
+    z-index: 1;
 }
 .carousel-inner {
     position: relative;
@@ -65,3 +72,32 @@ body {
     transform: rotate(180deg);
 }
 
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-family: 'Fjalla One', Arial, Helvetica, sans-serif;
+    
+  }
+  
+#logo {
+    font-family: 'Lilita One', cursive, Arial, Helvetica,sans-serif;
+    color: yellow;
+  }
+
+
+  .carousel-caption h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  

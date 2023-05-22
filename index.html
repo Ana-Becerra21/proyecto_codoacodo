@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@700&family=Indie+Flower&family=Oswald:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/carrousel.css">
-    <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Lilita+One&family=Patrick+Hand&display=swap" rel="stylesheet">
     <title>Travellers</title>
-    <script type="text/javascript" src="./JS/nav.js" defer></script>
-    <script type="text/javascript" src="./JS/script.js" defer></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/carrousel.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    
+    
    </head>
    
 <body>
-    <!---------------------------------- NAV BAR --------------------------------------->
+    <!-------------------------------------NAV BAR -->
     <nav class="menu">
-        <section class="menu__container">
-            <h1 class="menu__logo">Travellers</h1>
         
+        <section class="menu__container">
+            <img class="logo" src="./img/ubicacion-logo.png" height="60" alt="logo">
+            <h1 class="menu__logo">TRAVELLERS</h1>
+            
+            <input type="checkbox" id="menu-check">
+            <label id="menu" for="menu-check">
+                
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+
+            </label>
+        <div class="contenedor">
+            
             <ul class="menu__links">
                 <li class="menu__item active" aria-current="page">
                     <a href="./index.html" class="menu__link" >Home</a>
@@ -51,54 +60,70 @@
                 <a href="views/Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
                 </li>
             </ul>
-
-            <div class="menu__hamburguer">
-                <img src="./assets/menu.svg" class="menu__img">
-            </div>
+            
+            
+        </div>
+        <div id="weather-container">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+          </div>
+            
         </section>
     </nav>
+    
 
-    <!----------------------------------- HEADER ------------------------------------------->
     <header>
-
-        <div id="presentacion">
-            <h1>¡Bienvenidos a Travellers!</h1>
-        </div> 
 
         <!--                 CARROUSEL                   -->        
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carousel-slide active">
-                    <img src="./img/puerto-madero.webp" alt="Imagen 1" width="90%" height="500">
+                    <img src="./img/puerto-madero.webp" alt="Imagen 1" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenidos a<strong id="logo"> TRAVELLERS</strong>!</h3>
+                    </div>
                 </div>
                 <div class="carousel-item carousel-slide">
-                    <img src="./img/Calafate.png" alt="Imagen 2" width="90%" height="500">
+                    <img src="./img/Calafate.png" alt="Imagen 2" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenidos a<strong id="logo"> TRAVELLERS</strong>!</h3>
+                    </div>
                 </div>
                 <div class="carousel-item carousel-slide">
-                    <img src="./img/paul-lucyk-CcJiAGg8pTA-unsplash (1).jpg" alt="Imagen 3" width="90%" height="500">
+                    <img src="./img/paul-lucyk-CcJiAGg8pTA-unsplash (1).jpg" alt="Imagen 3" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenidos a<strong id="logo"> TRAVELLERS</strong>!</h3>
+                    </div>
                 </div>
             <div class="carousel-item carousel-slide">
-                    <img src="./img/nadine-marfurt-xFFdn-n5Y9I-unsplash.jpg" alt="Imagen 3" width="90%" height="500">
+                    <img src="./img/nadine-marfurt-xFFdn-n5Y9I-unsplash.jpg" alt="Imagen 3" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenidos a<strong id="logo"> TRAVELLERS</strong>!</h3>
+                    </div>
                 </div>
             <div class="carousel-item carousel-slide">
-                    <img src="./img/roi-dimor-wpje5hMfJj0-unsplash.jpg" alt="Imagen 3" width="90%" height="500">
+                    <img src="./img/roi-dimor-wpje5hMfJj0-unsplash.jpg" alt="Imagen 3" width="100%" height="500">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenidos a<strong id="logo"> TRAVELLERS</strong>!</h3>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control carousel-control-prev" href="#" role="button">
-                <span class="carousel-control-icon"></span>
-            </a>
-            <a class="carousel-control carousel-control-next" href="#" role="button">
-                <span class="carousel-control-icon"></span>
-            </a>
+            
         </div>
 
 
     </header>
     
-    <main>
+    <main>         
+
+        <div class="info">
+            <h2><b>¿Que es Travellers?</b></h2>
+            <p>Travellers es una busqueda de nuevas experiencias compartidas. Dentro de nuestro sitio podés encotrar reseñas de sitios y destinos, podés conectarte con otros viajeros para tener recomendaciones, para compartir viaje o compartir estadía.</p>
+        </div>
 
         
-        <!------------------------------------ CARDS ----------------------------------------------->
+        <!------------------------------------ CARDS -->
         <div class="grid-container">
 
             <div class="card green">
@@ -106,7 +131,7 @@
             </div>
 
             <div class="card red">
-                <a href="./views/Alquileres.html"><img src="img/logo-alojamiento-naranja.jpg" alt="Logo Alojamiento">Alojamiento</a>
+                <a href="./views/Alojamiento.html"><img src="img/logo-alojamiento-naranja.jpg" alt="Logo Alojamiento">Alojamiento</a>
                 
             </div>
                 
@@ -119,7 +144,7 @@
 
         
 
-        <!--------------------------------------------OPINIONES--------------------------------------------------------->
+        <!--------------------------------------------OPINIONES -->
         <div class="opiniones"> <!-- Poner opiniones de usuarios -->
             <div class="opiniones-container">
                 <div class="opinion-card">
@@ -147,8 +172,6 @@
     <!-------------------------------------------- FOOTER ----------------------------------------------------------->
     <footer>
         <div class="introduccion">
-            <!--<h3>¿Que es Travellers?</h3>
-            <p>Travellers es una busqueda de nuevas experiencias compartidas. Dentro de nuestro sitio podés encotrar reseñas de sitios y destinos, podés conectarte con otros viajeros para compartir viaje o compartir estadía.</p>-->
           <h3>Travellers</h3>
           <p>Encuentra a tu compañero de viaje ideal</p>
           <p>&copy; 2023 Travellers, Inc. Todos los derechos reservados.</p>
@@ -174,8 +197,9 @@
         </div>
       </footer>
 
-    <script type="text/javascript" src="JS/script.js"></script>
-    <script type="text/javascript" src="JS/nav.js"></script>
+      <script type="text/javascript" src="./JS/nav.js" defer></script>
+    <script type="text/javascript" src="./JS/script.js" defer></script>
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </body>
