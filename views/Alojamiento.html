@@ -9,6 +9,7 @@
     <title>Travellers</title>
     <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
     <link rel="stylesheet" type="text/css" href="../CSS/contacto.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     
     
 
@@ -51,8 +52,12 @@
           <p id="temperature"></p>
           <p id="description"></p>
           <p id="humidity"></p>
+          <p id="country"></p>
         </div>
-       
+
+        <div class="weather-img">
+            <img src="../img/clima-img.jpg" alt="imagen de clima" width="50%" height="50%">  
+        </div>  
     </section>
 
     </nav>
@@ -60,7 +65,7 @@
 <main>
        <div id="presentacion">
             <h1>Alojamientos</h1>
-
+            <br>
             <p>Publicá tu alojamiento disponible, dejá tu contacto para que los viajeros se puedan comunicar con vos!</p>
         </div> 
             
@@ -77,6 +82,13 @@
             </div>
             <!-- Aquí van las otras tarjetas -->
           </div>
+
+          <div class="iframe-container">
+            <h2>Para más informacion de las ubicaciones</h2>
+            <br>
+            <iframe class="iframe" src="https://www.google.com/maps?output=embed" frameborder="0" height="500px" width="50%"></iframe>
+          </div>
+
     </main>
 
     <footer>

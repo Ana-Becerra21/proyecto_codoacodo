@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon" >
     <title>Travellers</title>
     <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
-    <link rel="stylesheet" type="text/css" href="../Servicios/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     
 
 </head>
@@ -16,78 +16,83 @@
 <body>
 
     
-    
-    <!-- Navbar -->
-    <header>
-    <nav class="menu">
-        <section class="menu__container">
-            <img class="logo" src="../img/ubicacion-logo.png" height="60" alt="logo">
-            <h1 class="menu__logo">TRAVELLERS</h1>
-        <ul class="menu__links">
-            <li class="menu__item">
-                <a href="../index.html" class="menu__link">Home</a>
-            </li>
-            <li class="menu__item menu__item--show">
-               <a href="#" class="menu__link">Servicios<img src="../assets/arrow.svg" class="menu__arrow"></a>
-
-               <ul class="menu__nesting menu__nesting--visible">
-                <li class="menu__inside">
-                    <a href="./Destino.html" class="menu__link menu__link--inside">Destinos</a>
+    <div class="backgroud">
+        <!-- Navbar -->
+        <header>
+        <nav class="menu">
+            <section class="menu__container">
+                <img class="logo" src="../img/ubicacion-logo.png" height="60" alt="logo">
+                <h1 class="menu__logo">TRAVELLERS</h1>
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="../index.html" class="menu__link">Home</a>
                 </li>
-                <li class="menu__inside">
-                    <a href="./Alojamiento.html" class="menu__link menu__link--inside">Alojamientos</a>
-                </li>
-                <li class="menu__inside active" aria-current="page">
-                    <a id="destinos-menu" href="" class="menu__link menu__link--inside">Transportes</a>
-                </li>
-               </ul>
-            </li>
-            <li class="menu__item">
-               <a  href="./contactos.html" class="menu__link">Contacto</a>
-            </li>
-            <li class="menu__item">
-               <a href="./Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
-            </li>
-        </ul>
-        <div id="weather-container">
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="humidity"></p>
-          </div>
-        
-    </section>
+                <li class="menu__item menu__item--show">
+                <a href="#" class="menu__link">Servicios<img src="../assets/arrow.svg" class="menu__arrow"></a>
 
-    </nav>
-</header>
-<main>
+                <ul class="menu__nesting menu__nesting--visible">
+                    <li class="menu__inside">
+                        <a href="./Destino.html" class="menu__link menu__link--inside">Destinos</a>
+                    </li>
+                    <li class="menu__inside">
+                        <a href="./Alojamiento.html" class="menu__link menu__link--inside">Alojamientos</a>
+                    </li>
+                    <li class="menu__inside active" aria-current="page">
+                        <a id="destinos-menu" href="" class="menu__link menu__link--inside">Transportes</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="menu__item">
+                <a  href="./contactos.html" class="menu__link">Contacto</a>
+                </li>
+                <li class="menu__item">
+                <a href="./Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
+                </li>
+            </ul>
+            <div id="weather-container">
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="country"></p>
+            </div>
 
-       <div id="presentacion">
-            <h1>Transportes</h1>
-        </div> 
+            <div class="weather-img">
+                <img src="../img/clima-img.jpg" alt="imagen de clima" width="50%" height="50%">  
+            </div>  
             
+        </section>
+
+        </nav>
+    </header>
     <main>
-        <div class="buscador">
-            <h3>¿Desde donde viajas?</h3>
-            <form action="">
-                <label>Desde:</label>
-                <input type="text" placeholder="Lugar de origen">
+
+        <div id="presentacion">
+                <h1>Transportes</h1>
+            </div> 
+                
+        <main>
+            <div class="buscador">
+                <h3>¿Desde donde viajas?</h3>
+                <form action="">
+                    <label>Desde:</label>
+                    <input type="text" placeholder="Lugar de origen">
+                    <br>
+                    <label for="">Hasta:</label>
+                    <input type="text" placeholder="Lugar de destino">
+                    <br>
+                    <button>Buscar</button>
+                </form>
                 <br>
+            </div>
 
-                <label for="">Hasta:</label>
-                <input type="text" placeholder="Lugar de destino">
-            </form>
-        </div>
-
+            
         
-    
-    </main>
+        </main>
+    </div>
 
     <footer>
         <div class="introduccion">
-            <!--<h3>¿Que es Travellers?</h3>
-            <p>Travellers es una busqueda de nuevas experiencias compartidas. Dentro de nuestro sitio podés encotrar reseñas de sitios y destinos, podés conectarte con otros viajeros para compartir viaje o compartir estadía.</p>-->
           <h3>Travellers</h3>
-          <p>Encuentra a tu compañero de viaje ideal</p>
           <p>&copy; 2023 Travellers, Inc. Todos los derechos reservados.</p>
           <h4>Enlaces</h4>
           <ul>

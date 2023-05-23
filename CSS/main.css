@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Lilita+One&family=Patrick+Hand&display=swap');
 
 :root {
-  margin: 10px;
+  margin: 0;
   text-align:center;
 } 
 *{
@@ -117,18 +117,17 @@ background-color: whitesmoke;
 /*------------------------------ CARD OPINIONES ------------------------------*/
 
 .opiniones{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 30px;
 }
 
 .opiniones-container {
   display: grid;
-  grid-template-columns: repeat(3, 40%);
-  column-gap: 10%;
-  max-width: 70%;
-
-
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5%;
+  max-width: 90vp;
+  margin: 40px;
 }
 
 .opinion-card {
@@ -141,23 +140,25 @@ background-color: whitesmoke;
 }
 
 .opinion-card img {
-  border-radius: 80px 80px 80px 80px;
-  max-height: 150px;
-  max-width: 150px;
+  border-radius: 100px 100px 100px 100px;
+  max-height: 20vh;
+  max-width: 10vw;
   margin-bottom: 10px;
 }
 
 .opinion-card h2{
-  font-size: 30px;
+  font-size: 1em;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .opinion-card p {
   font-family: 'Indie Flower', cursive;
-  font-size: 25px;
-  margin: 30px;
+  font-size: 1em;
+  margin: 10px;
 }
+
+
 /* -------------------- Estilos Iniciar Sesion  -------------------------*/
 
 .form-container {
@@ -213,6 +214,7 @@ button:hover {
 .login-form p {
   margin-bottom: 2rem;
 }
+
 
 
 

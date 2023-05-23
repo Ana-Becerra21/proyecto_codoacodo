@@ -8,113 +8,115 @@
     <title>Travellers</title>
     <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     
 
 </head>
 
 <body>
-<!-- Navbar -->
-<header>
-    <nav class="menu">
-        <section class="menu__container">
-            <img class="logo" src="../img/ubicacion-logo.png" height="60" alt="logo">
-            <h1 class="menu__logo">TRAVELLERS</h1>
+    <div class="background-body">
+        <header>
+            <nav class="menu">
+                <section class="menu__container">
+                    <img class="logo" src="../img/ubicacion-logo.png" height="60" alt="logo">
+                    <h1 class="menu__logo">TRAVELLERS</h1>
+                
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="../index.html" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">Servicios<img src="../assets/arrow.svg" class="menu__arrow"></a>
+
+                    <ul class="menu__nesting menu__nesting--visible">
+                        <li class="menu__inside">
+                            <a href="./Destino.html" class="menu__link menu__link--inside">Destino</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./Alojamiento.html" class="menu__link menu__link--inside">Alojamientos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="./Transportes.html" class="menu__link menu__link--inside">Transportes</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="menu__item" >
+                    <a href="./contactos.html" class="menu__link">Contacto</a>
+                    </li>
+                    <li class="menu__item active" aria-current="page">
+                    <a id="destinos-menu" href=" " class="menu__link">Iniciar Sesion</a>
+                    </li>
+                </ul>
+                    <div id="weather-container">
+                        <p id="temperature"></p>
+                        <p id="description"></p>
+                        <p id="humidity"></p>
+                        <p id="country"></p>
+                    </div>
+
+                <div class="weather-img">
+                    <img src="../img/clima-img.jpg" alt="imagen de clima" width="50%" height="50%">  
+                </div>  
+            </nav>
+        </header>
+
+        <main>
+
+            <div id="presentacion">
+                <h1>Iniciar Sesion</h1>
+            </div> 
         
-        <ul class="menu__links">
-            <li class="menu__item">
-                <a href="../index.html" class="menu__link">Home</a>
-            </li>
-            <li class="menu__item menu__item--show">
-               <a href="#" class="menu__link">Servicios<img src="../assets/arrow.svg" class="menu__arrow"></a>
-
-               <ul class="menu__nesting menu__nesting--visible">
-                <li class="menu__inside">
-                    <a href="./Destino.html" class="menu__link menu__link--inside">Destino</a>
-                </li>
-                <li class="menu__inside">
-                    <a href="./Alojamiento.html" class="menu__link menu__link--inside">Alojamientos</a>
-                </li>
-                <li class="menu__inside">
-                    <a href="./Transportes.html" class="menu__link menu__link--inside">Transportes</a>
-                </li>
-               </ul>
-            </li>
-            <li class="menu__item" >
-               <a href="./contactos.html" class="menu__link">Contacto</a>
-            </li>
-            <li class="menu__item active" aria-current="page">
-               <a id="destinos-menu" href=" " class="menu__link">Iniciar Sesion</a>
-            </li>
-        </ul>
-        <div id="weather-container">
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="humidity"></p>
-          </div>
-        
-    </section>
-
-    </nav>
-</header>
-<main>
-
-       <div id="presentacion">
-            <h1>Iniciar Sesion</h1>
-        </div> 
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario">
+                    </div>
             
-    
-       
-          <div class="form-container">
-            <form>
-                <div class="form-group">
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" id="usuario" name="usuario">
-                </div>
-          
-                <div class="form-group">
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" id="contrasena" name="contrasena">
-                    <br>
-                    <p>¿No tienes una cuenta? <a href="./contactos.html">Regístrate aquí</a>.</p>
-    
-                </div>
-          
-              <button type="submit">Iniciar sesión</button>
-            </form>
-            <br>
-          </div>
-          
-          
-    </main>
-    <footer>
-        <div class="introduccion">
-            <!--<h3>¿Que es Travellers?</h3>
-            <p>Travellers es una busqueda de nuevas experiencias compartidas. Dentro de nuestro sitio podés encotrar reseñas de sitios y destinos, podés conectarte con otros viajeros para compartir viaje o compartir estadía.</p>-->
-          <h3>Travellers</h3>
-          <p>Encuentra a tu compañero de viaje ideal</p>
-          <p>&copy; 2023 Travellers, Inc. Todos los derechos reservados.</p>
-          <h4>Enlaces</h4>
-          <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="Destino.html">Destinos</a></li>
-            <li><a href="contactos.html">Contacto</a></li> <!-- Lleva a pag con formulario para contactar  -->
-            <li><a href="#">Sobre Nosotros</a></li><!-- Lleva a otra pagina about us -->
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-          </ul>
-          <h4>Contacto</h4>
-          <p>Dirección: Av Cordoba 4500, Villa Crespo</p>
-          <p>Teléfono: +54 9 1122334455</p>
-          <p>Email: info@travellers.com.ar</p>
-          <h4>Síguenos en redes sociales</h4>
-          <ul class="social-media-links">
-            <li><a href="https://www.facebook.com/travellers"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/travellers"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/travellers"><i class="fab fa-instagram"></i></a></li>
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena">
+                        <br>
+                        <p>¿No tienes una cuenta? <a href="./contactos.html">Regístrate aquí</a>.</p>
+        
+                    </div>
+            
+                <button type="submit">Iniciar sesión</button>
+                </form>
+                <br>
+            </div>
+        </main>
+
+        <footer>
+            <div class="introduccion">
+                <!--<h3>¿Que es Travellers?</h3>
+                <p>Travellers es una busqueda de nuevas experiencias compartidas. Dentro de nuestro sitio podés encotrar reseñas de sitios y destinos, podés conectarte con otros viajeros para compartir viaje o compartir estadía.</p>-->
+            <h3>Travellers</h3>
+            <p>Encuentra a tu compañero de viaje ideal</p>
+            <p>&copy; 2023 Travellers, Inc. Todos los derechos reservados.</p>
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="Destino.html">Destinos</a></li>
+                <li><a href="contactos.html">Contacto</a></li> <!-- Lleva a pag con formulario para contactar  -->
+                <li><a href="#">Sobre Nosotros</a></li><!-- Lleva a otra pagina about us -->
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
             </ul>
-        </div>
-      </footer>
+            <h4>Contacto</h4>
+            <p>Dirección: Av Cordoba 4500, Villa Crespo</p>
+            <p>Teléfono: +54 9 1122334455</p>
+            <p>Email: info@travellers.com.ar</p>
+            <h4>Síguenos en redes sociales</h4>
+            <ul class="social-media-links">
+                <li><a href="https://www.facebook.com/travellers"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/travellers"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/travellers"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>  
+
+    
    
     <script type="text/javascript" src="../JS/nav.js"></script>
     <script type="text/javascript" src="../JS/main.js"></script>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Lilita+One&family=Patrick+Hand&display=swap');
 
 :root {
-  margin: 10px;
+  margin: 0;
   text-align:center;
 } 
 
@@ -22,51 +22,51 @@
   font-family: 'Lilita One', cursive, Arial, Helvetica,sans-serif;
 }
   
-  /*CONTACTOS*/
+/*CONTACTOS*/
 
-  #registro-form {
-    display: grid;
-    gap: 1rem;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  #registro-form label {
-    font-weight: bold;
-  }
-  
-  #registro-form input[type="text"],
-  #registro-form input[type="email"],
-  #registro-form input[type="tel"] {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    line-height: 1.5;
-    box-sizing: border-box;
-  }
-  
-  #registro-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  #registro-form button:hover {
-    background-color: #3e8e41;
-  }
-  
+#registro-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
 
-  /* -----------------------CARD ALOJAMIENTO ----------------------*/
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+#registro-form label {
+  font-weight: bold;
+}
+
+#registro-form input[type="text"],
+#registro-form input[type="email"],
+#registro-form input[type="tel"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+#registro-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#registro-form button:hover {
+  background-color: #3e8e41;
+}
+
+
+/* -----------------------CARD ALOJAMIENTO ----------------------*/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -124,6 +124,7 @@
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
+
 
 
   
