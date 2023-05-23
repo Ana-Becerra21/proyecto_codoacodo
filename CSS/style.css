@@ -11,17 +11,6 @@
   box-sizing: border-box;
 }
 
-/* NAVBAR*/
-.menu__logo {
-  font-size: 3em;
-  padding-right: 80px;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-  font-family: 'Lilita One', cursive, Arial, Helvetica,sans-serif;
-}
-
 /* -------------------- CARD DESTINO ---------------------------------- */
 .card-container {
   display: grid;
@@ -184,28 +173,7 @@ main{
   color: rgb(251,164,5);
 }
 
-footer {
-  display: flex;
-}
 
-.footer-logo,
-.footer-links,
-.footer-contacto,
-.footer-redes,
-.social-media-links {
-flex: 1;
-font-size: 1rem;
-font-weight: 500;
-line-height: 1.375rem;
-font-family: "Sofia Pro", sans-serif;
-color: rgb(255, 255, 255);
-opacity: 0.64;
-text-decoration-line: none;
-transition-duration: 0.3s;
-transition-timing-function: ease-in;
-transition-delay: 0s;
-transition-property: opacity;
-margin-bottom: 1rem;
-}
+
 
 

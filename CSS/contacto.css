@@ -47,7 +47,7 @@
 }
 
 #registro-form button {
-  background-color: #4CAF50;
+  background-color: rgb(249,175,60);
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -57,7 +57,7 @@
 }
 
 #registro-form button:hover {
-  background-color: #3e8e41;
+  background-color: rgb(239,119,71);
 }
 
 
