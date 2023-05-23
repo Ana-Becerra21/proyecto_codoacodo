@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Lilita+One&family=Patrick+Hand&display=swap');
+
 :root {
   margin: 10px;
   text-align:center;
 } 
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-  
-  body {
-    
-    background-color: #f3efef;
-  }
-  
- 
-  
+
+/* NAVBAR*/
+.menu__logo {
+  font-size: 3em;
+  padding-right: 80px;
+  padding-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-family: 'Lilita One', cursive, Arial, Helvetica,sans-serif;
+}
   
   /*CONTACTOS*/
 

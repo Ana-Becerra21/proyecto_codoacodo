@@ -4,10 +4,22 @@
   margin: 10px;
   text-align:center;
 } 
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* NAVBAR*/
+.menu__logo {
+  font-size: 3em;
+  padding-right: 80px;
+  padding-left: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-family: 'Lilita One', cursive, Arial, Helvetica,sans-serif;
 }
 
 /* -------------------- CARD DESTINO ---------------------------------- */
