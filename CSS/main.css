@@ -148,6 +148,7 @@ background-color: whitesmoke;
 
 .opinion-card h2{
   font-size: 1em;
+  color: black
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
@@ -156,6 +157,7 @@ background-color: whitesmoke;
   font-family: 'Indie Flower', cursive;
   font-size: 1em;
   margin: 10px;
+  color: black;
 }
 
 
