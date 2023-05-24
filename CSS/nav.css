@@ -163,6 +163,7 @@
         overflow-y: auto;
         display: grid;
         grid-auto-rows: min-content;
+        transform: translateX(100%)
        
        
     }
@@ -189,7 +190,7 @@
         width: 100%;
         transform: translateY(0);
         height: 0;
-        transition: height .10s;
+        transition: height 0.3s;
     }
 
     .menu__link--inside{

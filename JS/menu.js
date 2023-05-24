@@ -1,56 +1,61 @@
-(function() {
-    const menuToggle = document.querySelector('.menu__hamburguer');
-    const menuLinks = document.querySelector('.menu__links');
-    const menuItems = document.querySelectorAll('.menu__item--show');
+(function(){
+    const listElements = document.querySelectorAll('.menu__item--show');
+    const list = document.querySelector('.menu__links');
+    const menu = document.querySelector('.menu__hamburguer');
 
-    const toggleSubMenu = (element) => {
-        const subMenu = element.querySelector('.menu__inside');
-        const linkInside = element.querySelector('.menu__link--inside');
+    const addClick = ()=>{
+        listElements.forEach(element =>{
+            element.addEventListener('click', ()=>{
 
-        subMenu.classList.toggle('menu__nesting--show');
-        linkInside.classList.toggle('menu__link--active');
-    };
+                
+                let subMenu = element.children[1];
+                let height = 0;
+                element.classList.toggle('menu__item--active');
 
-    const toggleMenu = () => {
-        menuToggle.classList.toggle('menu__hamburguer--active');
-        menuLinks.classList.toggle('menu__links--show');
-    };
 
-    const closeMenu = () => {
-        menuToggle.classList.remove('menu__hamburguer--active');
-        menuLinks.classList.remove('menu__links--show');
-        menuItems.forEach(item => {
-            item.classList.remove('menu__item--active');
-            const subMenu = item.querySelector('.menu__inside');
-            const linkInside = item.querySelector('.menu__link--inside');
-            subMenu.classList.remove('menu__nesting--show');
-            linkInside.classList.remove('menu__link--active');
+                if(subMenu.clientHeight === 0){
+                    height = subMenu.scrollHeight;
+                }
+
+                subMenu.style.height = `${height}px`;
+
+            });
         });
-    };
+    }
 
-    menuToggle.addEventListener('click', () => {
-        toggleMenu();
-    });
+    const deleteStyleHeight = ()=>{
+        listElements.forEach(element=>{
 
-    menuItems.forEach(item => {
-        item.addEventListener('click', (event) => {
-            event.stopPropagation();
-            toggleSubMenu(item);
+            if(element.children[1].getAttribute('style')){
+                element.children[1].removeAttribute('style');
+                element.classList.remove('menu__item--active');
+            }
+
         });
-    });
+    }
 
-    document.addEventListener('click', () => {
-        if (menuLinks.classList.contains('menu__links--show')) {
-            closeMenu();
+
+    window.addEventListener('resize', ()=>{
+        if(window.innerWidth > 800){
+            deleteStyleHeight();
+            if(list.classList.contains('menu__links--show'))
+                list.classList.remove('menu__links--show');
+
+        }else{
+            addClick();
         }
     });
 
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 800) {
-            closeMenu();
-        }
-    });
+    if(window.innerWidth <= 800){
+        addClick();
+    }
+
+    menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
+
+
+
 })();
+
 
     
 
