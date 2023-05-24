@@ -11,18 +11,8 @@
   box-sizing: border-box;
 }
 
-/* NAVBAR*/
-.menu__logo {
-  font-size: 3em;
-  padding-right: 80px;
-  padding-left: 0;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-  font-family: 'Lilita One', cursive, Arial, Helvetica,sans-serif;
-}
   
-/*CONTACTOS*/
+/*-------------------------CONTACTOS------------------------*/
 
 #registro-form {
   display: grid;
@@ -96,13 +86,26 @@
   height: auto;
   background-size: cover;
   background-position: center;
+
 }
+
+.iframe {
+  margin-bottom: 50px;
+}
+
+main{
+  color: rgb(251,164,5);
+}
+
+/* ----------------------- MEDIA QUERY CARD ALOJAMIENTO ----------------------*/
 
 @media screen and (max-width: 768px) {
   .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
+
+/* ----------------------- ANIMACION Y TRANSFORMACION CARD ALOJAMIENTO ----------------------*/
 
 @keyframes card-hover {
   from {
@@ -124,6 +127,8 @@
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
+
+/* -----------------------FOOTER ----------------------*/
 
 footer {
   display: flex;

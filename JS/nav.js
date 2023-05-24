@@ -1,4 +1,4 @@
-const apiKey = 'f2fccefaecb21af526ec014538d02336'; // Reemplaza con tu clave de API
+const apiKey = 'f2fccefaecb21af526ec014538d02336'; 
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid&lang=es&appid=${apiKey}&units=metric`)
   .then(response => response.json())
@@ -22,6 +22,8 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid&la
   .catch(error => {
     console.log('Error al obtener los datos del pronóstico del tiempo:', error);
   });
+
+  
 
 
 

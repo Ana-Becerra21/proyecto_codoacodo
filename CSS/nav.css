@@ -45,11 +45,6 @@
   font-family: 'Lilita One', cursive, Arial, Helvetica,sans-serif;
 }
 
-
-
-
-
-
 .menu__container{
   display: flex;
   justify-content: space-between;
@@ -80,14 +75,6 @@
   --transform: rotate(0);
 }
 
-.menu__arrow{
-  transform: var(--transform);
-  transition: transform .3s;
-  display: block;
-  margin-left: 3px;
-
-}
-
 .menu__link{
 
   text-decoration: none;
@@ -96,8 +83,6 @@
   height: 50%;
   align-items: center;
   font-family: 'Fjalla One', Arial, Helvetica, sans-serif;
-
-  
 }
 
 .menu__link:hover{
@@ -105,7 +90,12 @@
   
 }
 
-
+.menu__arrow{
+  transform: var(--transform);
+  transition: transform .3s;
+  display: block;
+  margin-left: 3px;
+}
 
 .menu__nesting{
   list-style: none;
@@ -117,13 +107,7 @@
    width: max-content;
    transform: translateY(100%);
    background-color: rgb(57,106,177);
-   display: none;
    z-index: 1;
-  }
-
-
-  .menu__nesting--visible{
-    display: block;
   }
 
   .menu__link--inside{
@@ -134,12 +118,95 @@
     background-color: rgb(57,106,177);
   }
 
-  #menu, #menu-check{
+  .menu__hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
     display: none;
-  }
-  
+}
 
-  /* API TEMPERATURA*/
+.menu__img{
+    display: block;
+    width: 36px;
+}
+
+@media (max-width:800px){
+    .menu__hamburguer{
+        display: flex;
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow:hidden ;
+    }
+
+    .menu__item--active{
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
+
+    .menu__item--show{
+        background-color: var(--background);
+    }
+
+
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: min-content;
+       
+       
+    }
+
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .10s;
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+    .menu__nesting--show {
+      height: auto;
+  }
+  }
+
+    
+
+
+  
+/*---------------- API TEMPERATURA----------------*/
   
   #weather-container {
     background-color: rgb(57,106,177);
@@ -178,13 +245,8 @@
     margin-top: 5px;
   }
 
-
+  /*------GENERAL------*/
   
-  /*------------*/
-  
-  
-  
-
   #presentacion {
     padding: 30px;
     text-align: center;
@@ -225,63 +287,6 @@
   }
 
  
-  
-
-
-
-
- 
-
-  /*@media only screen and (max-width:700px){
-    nav.menu div.contenedor{
-      display: flex;
-      place-content: space-between;
-
-    }
-    #menu-check:not(:checked) ~ div.contenedor{
-      display: none;
-    }
-    #menu-check:checked ~ div.contenedor{
-      display: block;
-    }
-    #menu{
-      display: block;
-      color: #5e7094;
-      background-color: azure;
-      font-size: 1.2em;
-      font-weight: bold;
-      border: 3px solid yellow;
-      border-radius: 0.3em;
-      position: absolute;
-      right: 0.5em;
-      top: 5.5em;
-
-    }
-    #menu:hover{
-      color: aqua;
-      background: #4f0cf9;
-    }
-    #menu-cerrar {
-      display: none;
-    }
-    #menu-check:checked ~ label #menu-abrir{
-      display: none;
-    }
-    #menu-check:checked ~ label #menu-cerrar{
-      display: block;
-  }
-  nav div.contenedor{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #4f0cf9;
-    padding-top: 0.5em;
-    padding-right: 1.5em;
-    color: #5e7094;
-  }
-}*/
-
 .background-body {
   background-image: url("../img/header-background1.jpg");
   background-repeat: no-repeat;

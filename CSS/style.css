@@ -38,97 +38,7 @@
   position: relative;
 }
 
-
-/*.card-detail {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(50% - 10%);
-  height: calc(55% - 5%);
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  padding: 20px;
-}
-
-.card-detail h2,
-.card-detail p {
-  color: #fff;
-  text-align: center;
-}
-
-.card-detail .close-btn {
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  color: #e60909;
-}
-
-.card.show-detail .card-detail {
-  display: block;
-}
-
-.card:nth-child(2n) .card-detail {
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-}
-
-
-/*.card-detail {
-  display: none;
-  position: fixed;
-  width: calc(50% - 10%);
-  height: calc(55% - 5%);
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  padding: 20px;
-  
-}
-
-.card-detail h2, .card-detail p {
-  color: #fff;
-  text-align: center;
-}
-
-.card-detail .close-btn {
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  color: #e60909;
-}
-
-.card.show-detail .card-detail {
-  display: block;
-}
-
-.card:nth-child(2n) .card-detail {
-  grid-column: 1 / span 2; 
-  grid-row: 1 / span 2; 
-}*/
-
-/*@keyframes card-hover {
-  from {
-    transform: scale(1);
-    z-index: 1;
-  }
-  to {
-    transform: scale(2);
-    z-index: 2;
-  }
-}
-
-.card {
-  position: relative;
-  background-color: #ccc;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  animation-name: card-hover;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-}*/
+/* -------------------- TRANSFORMACIONES Y ANIMACIONES CARD DESTINO ---------------------------------- */
 
 @keyframes card-hover {
   from {
@@ -138,9 +48,6 @@
     transform: scale(1.1);
   }
 }
-
-
-
 .card-detail {
   display: none;
   position: absolute;
@@ -157,7 +64,7 @@
 }
 
 .card:hover {
-  transform: scale(1.3);
+  transform: scale(1.5);
   z-index: 2;
 }
 
@@ -165,13 +72,26 @@
   display: block;
 }
 
-.iframe {
-  margin-bottom: 50px;
+
+
+/* -------------------- MEDIA QUERY CARD DESTINO ---------------------------------- */
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr); /* Cambiamos a 1 columna para dispositivos móviles */
+  }
+  .card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
 }
 
-main{
-  color: rgb(251,164,5);
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas para tablets */
+  }
 }
+
 
 
 

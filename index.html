@@ -17,65 +17,58 @@
    
 <body>
     <!-------------------------------------NAV BAR -->
-    <nav class="menu">
-        
-        <section class="menu__container">
-            <img class="logo" src="./img/ubicacion-logo.png" height="60" alt="logo">
-            <h1 class="menu__logo">TRAVELLERS</h1>
+        <nav class="menu">
+            <section class="menu__container">
+                    <img class="logo" src="./img/ubicacion-logo.png" height="60" alt="logo">
+                    <h1 class="menu__logo">TRAVELLERS</h1>
+                    
+                    
             
-            <input type="checkbox" id="menu-check">
-            <label id="menu" for="menu-check">
+                    
+                    <ul class="menu__links">
+                        <li class="menu__item active" aria-current="page">
+                            <a href="./index.html" class="menu__link" >Home</a>
+                        </li>
+                        <li class="menu__item menu__item--show">
+                        <a href="" class="menu__link" id="destinos-menu">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
+
+                        <ul class="menu__nesting menu__nesting--visible">
+                            <li class="menu__inside">
+                                <a href="views/Destino.html" class="menu__link menu__link--inside">Destino</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="views/Alojamiento.html" class="menu__link menu__link--inside">Alojamiento</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="views/Transportes.html" class="menu__link menu__link--inside">Transportes</a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="menu__item">
+                        <a href="views/contactos.html" class="menu__link">Contacto</a>
+                        </li>
+                        <li class="menu__item">
+                        <a href="views/Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
+                        </li>
+                    </ul>
+                    
                 
-                <span id="menu-abrir">&#9776;</span>
-                <span id="menu-cerrar">X</span>
+                    <div id="weather-container">
+                    <p id="temperature"></p>
+                    <p id="description"></p>
+                    <p id="humidity"></p>
+                    <p id="country"></p>
+                </div>
 
-            </label>
-        <div class="contenedor">
-            
-            <ul class="menu__links">
-                <li class="menu__item active" aria-current="page">
-                    <a href="./index.html" class="menu__link" >Home</a>
-                </li>
-                <li class="menu__item menu__item--show">
-                <a href="" class="menu__link" id="destinos-menu">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                <div class="weather-img">
+                    <img src="img/clima-img.jpg" alt="imagen de clima" width="50%" height="50%">  
+                </div> 
+                <div class="menu__hamburguer">
+                    <img src="./assets/menu.svg" class="menu__img">
+                </div> 
 
-                <ul class="menu__nesting menu__nesting--visible">
-                    <li class="menu__inside">
-                        <a href="views/Destino.html" class="menu__link menu__link--inside">Destino</a>
-                    </li>
-                    <li class="menu__inside">
-                        <a href="views/Alojamiento.html" class="menu__link menu__link--inside">Alojamiento</a>
-                    </li>
-                    <li class="menu__inside">
-                        <a href="views/Transportes.html" class="menu__link menu__link--inside">Transportes</a>
-                    </li>
-                </ul>
-                </li>
-                <li class="menu__item">
-                <a href="views/contactos.html" class="menu__link">Contacto</a>
-                </li>
-                <li class="menu__item">
-                <a href="views/Iniciar Sesion.html" class="menu__link">Iniciar Sesion</a>
-                </li>
-            </ul>
-            
-            
-        </div>
-
-        
-        <div id="weather-container">
-            <p id="temperature"></p>
-            <p id="description"></p>
-            <p id="humidity"></p>
-            <p id="country"></p>
-        </div>
-
-        <div class="weather-img">
-            <img src="img/clima-img.jpg" alt="imagen de clima" width="50%" height="50%">  
-        </div>  
-
-        </section>
-    </nav>
+                </section>
+        </nav>
     
 
     <header>
@@ -180,7 +173,7 @@
 
     </main>
 
-    <!-------------------------------------------- FOOTER ----------------------------------------------------------->
+    <!-------------------------------------------- FOOTER ---------------------------------------------------->
     <footer>
          <div class="footer-logo">
             <h3>Travellers</h3>
@@ -215,9 +208,10 @@
             </ul>
          </div>
       </footer>
-
-      <script type="text/javascript" src="./JS/nav.js" defer></script>
+    <script type="text/javascript" src="./JS/menu.js" defer></script>
+    <script type="text/javascript" src="./JS/nav.js" defer></script>
     <script type="text/javascript" src="./JS/script.js" defer></script>
+    
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
