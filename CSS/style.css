@@ -90,6 +90,12 @@
   .card-container {
     grid-template-columns: repeat(2, 1fr); /* Cambiamos a 2 columnas para tablets */
   }
+  .card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+  
 }
 
 
