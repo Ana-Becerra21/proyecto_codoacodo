@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img\ubicacion-logo.png" type="image/x-icon">
+    
     <title>Travellers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./CSS/carrousel.css">
@@ -30,7 +31,7 @@
                             <a href="./index.html" class="menu__link" >Home</a>
                         </li>
                         <li class="menu__item menu__item--show">
-                        <a href="" class="menu__link" id="destinos-menu">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
+                        <a href="#" class="menu__link" id="destinos-menu">Servicios<img src="./assets/arrow.svg" class="menu__arrow"></a>
 
                         <ul class="menu__nesting menu__nesting--visible">
                             <li class="menu__inside">
@@ -52,13 +53,17 @@
                         </li>
                     </ul>
                     
+                    <div class="result">
+                        <div id="weather-container">
+                            <p id="temperature"></p>
+                            <p id="description"></p>
+                            <p id="humidity"></p>
+                            
+                            
+                        </div>
+                    </div>
                 
-                    <div id="weather-container">
-                    <p id="temperature"></p>
-                    <p id="description"></p>
-                    <p id="humidity"></p>
-                    <p id="country"></p>
-                </div>
+                    
 
                 <div class="weather-img">
                     <img src="img/clima-img.jpg" alt="imagen de clima" width="50%" height="50%">  

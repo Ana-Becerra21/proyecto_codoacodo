@@ -13,9 +13,7 @@
 
 
 /* ------------------------ Nav -------------------------------- */
-
-
-.menu{
+ .menu{
   background-color: rgb(57,106,177);
   color: yellow;
   height: 95px;
@@ -24,8 +22,6 @@
   left: 0;
   width: 100%;
   z-index: 9999;
-  
-  
 }
 
 .logo {
@@ -118,6 +114,8 @@
     background-color: rgb(57,106,177);
   }
 
+
+
   .menu__hamburguer{
     height: 100%;
     display: flex;
@@ -125,16 +123,26 @@
     padding: 0 15px;
     cursor: pointer;
     display: none;
-}
 
+   
+}
 .menu__img{
-    display: block;
-    width: 45px;
+  display: block;
+  width: 45px;
 }
 
-@media (max-width:800px){
+/* ------------------------ MEDIA QUERY NAV -------------------------------- */
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+   .menu__logo{
+    align-items: center;
+    padding-right: 20px;
+   }
+
     .menu__hamburguer{
         display: flex;
+       
     }
 
     .menu__item{
@@ -144,7 +152,8 @@
 
     .menu__item--active{
         --transform: rotate(0);
-        --background: #5e7094;
+        --background: rgb(57,106,177, 0.9);  /*click servicios */
+
     }
 
     .menu__item--show{
@@ -152,7 +161,7 @@
       
     }
 
-
+    
     .menu__links{
         position: fixed;
         max-width: 400px;
@@ -160,7 +169,8 @@
         top: 70px;
         bottom: 0;
         right: 0;
-        background-color: #000;
+        background-color: rgb(57,106,177, 0.9);    /*fondo menu hamburguesa */
+
         overflow-y: auto;
         display: grid;
         grid-auto-rows: max-content;
@@ -192,16 +202,40 @@
         transform: translateY(0);
         height: 0;
         transition: height 0.3s;
-        background-color: #5e7094 ;
+        background-color: rgb(57,106,177, 09);      /*menu desplegable, fondo de destino, alojamiento*/
     }
 
     .menu__link--inside{
         width: 90%;
         margin-left: auto;
-        border-left: 1px solid #798499;
+        border-left: 1px solid #798499;      /*borde izq del menu que despliega */
+      }
+
+      #temperature {
+        font-size: 16px;
+        font-weight: bold;
+       
+      }
+      
+      #description {
+        font-size: 12px;
+        
+      }
+      
+     
+      .weather-img{
+        display: none;
+    
+      }
+      
+
+
+
     }
+
+ 
    
-  }
+  
 
     
 
@@ -210,17 +244,18 @@
 /*---------------- API TEMPERATURA----------------*/
   
   #weather-container {
-    background-color: rgb(57,106,177);
+    background-color: rgb(57,106,177, 06);
     border-radius: 5px;
     padding: 8px;
     float: right; 
     margin-top: 0;
-    margin-right: 0; 
+    margin-right: 0;
+    
     
   }
 
   .weather-img{
-    padding-left: 0;
+    padding-left: 5px;
     right: 0;
 
   }
@@ -233,18 +268,16 @@
   
   #description {
     font-size: 12px;
-    margin-top: 8px;
+    margin-top: 5px;
   }
   
   #humidity {
     font-size: 12px;
     margin-top: 5px;
   }
+ 
 
-  #country {
-    font-size: 12px;
-    margin-top: 5px;
-  }
+  
 
   /*------GENERAL------*/
   
