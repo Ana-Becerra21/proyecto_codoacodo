@@ -132,8 +132,80 @@
 }
 
 /* ------------------------ MEDIA QUERY NAV -------------------------------- */
+@media (max-width: 1300px){
+  .menu__link{
+    padding: 9px;
+    height: 50%;
+    }
+  
+    #weather-container {
+    padding: 8px;
+    float: right; 
+    top: 0;
+    margin-left: 6px;
+    
+    }
 
-@media (min-width: 577px) and (max-width: 767px) {
+  .weather-img{
+    padding-left: 2px;
+    right: 0;
+
+  }
+  .menu__logo{
+    align-items: center;
+    padding-right: 20px;
+   }
+  
+}
+@media (max-width: 1224px){
+
+  .menu__link{
+   padding: 8px;
+   
+   
+    }
+    .menu__logo{
+      padding-left: 2px;
+      padding-right: 7px;
+     }
+     .logo {
+      top: 0;
+      margin-right: 10px; 
+    }
+  
+  }
+  @media (max-width: 1026px){
+   
+       .menu__logo{
+         padding-left: 2px;
+         padding-right: 1px;
+         font-size: 2.5em;
+        }
+        .logo {
+         top: 0;
+         margin-right: 10px; 
+       }
+       
+       .weather-img{
+       display: none;
+    
+      }
+     
+  }
+  @media (max-width: 976px){
+    
+      #weather-container {
+        padding: 2px;
+        top: 0;
+        margin-left: 5px;
+        }
+        .menu__link{
+          padding: 8px;
+          
+        }
+}
+  
+@media (max-width: 767px) {
 
    .menu__logo{
     align-items: center;
@@ -227,11 +299,32 @@
         display: none;
     
       }
+      }
+
+      @media (max-width: 767px){
+       
       
+          .menu__hamburguer{
+              display: flex;
+             
+          }
+          #weather-container {
+            display: none;
+          }
 
+          .logo {
+             
+            font-size: 16px;
+          }
+          
+          
+          .menu__logo {
+            font-size: 2em;
+            padding-right: 8px;
+            
+          }
 
-
-    }
+      }
 
  
    
@@ -321,7 +414,13 @@
   }
 
  
-.background-body {
+.contact-content{
+  background-image: url("../img/header-background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-sesion{
   background-image: url("../img/header-background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
