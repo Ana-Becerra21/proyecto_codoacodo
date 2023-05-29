@@ -132,6 +132,41 @@
 }
 
 /* ------------------------ MEDIA QUERY NAV -------------------------------- */
+
+@media (max-width: 2200px){
+  .menu__link{
+    padding: 9px;
+    height: 50%;
+    }
+    .menu{
+      max-width: 100%;
+    }
+  
+    #weather-container {
+    padding: 8px;
+    float: right; 
+    top: 0;
+    margin-left: 6px;
+    
+    }
+
+  .weather-img{
+    padding-left: 2px;
+    right: 0;
+
+  }
+  .menu__logo{
+    align-items: center;
+    padding-right: 20px;
+   }
+
+   #one-page{
+    display: none;
+   }
+  
+}
+
+
 @media (max-width: 1300px){
   .menu__link{
     padding: 9px;
@@ -545,17 +580,23 @@
             display: block;
           }
 
-          section #destin {
-            min-height: 100vh;
+           #destin {
+           
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: aquamarine;
             
         }
         
         section h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .card img {
+          width: 100%;
+          height: 100%;
+          position: relative;
         }
         
         
