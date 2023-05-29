@@ -11,7 +11,8 @@
     box-sizing: border-box;
   }
 
-/* NAVBAR*/
+/*---------------- NAVBAR--------------------*/
+
 .menu__logo {
     font-size: 3em;
     padding-right: 80px;
@@ -109,6 +110,99 @@
   
   .carousel-caption p {
     font-size: 24px;
-    margin-bottom: 0;
+    
   }
+ /*---------------- MEDIA QUERY--------------------*/ 
+  
+  @media (max-width: 767px) {
+    .carousel {
+        width: 100%;
+        height: 250px;
+        margin-top: 60px;
+        
+    }
+    
+    .carousel-caption h3 {
+        font-size: 24px;
+        
+      }
+      
+      .carousel-caption p {
+        font-size: 16px;
+        
+      }
+
+      .fotocar{
+        width: 100%;
+        height: 90%;
+      }
+      .logo{
+        font-size: 10px;
+
+      }
+      .menu__logo {
+        font-size: 16px;
+       
+    }
+
+    .info h2{
+        padding-top: 0px;
+        font-size: 24px;
+      }
+      
+      .info p {
+        margin: 5px;
+        font-size: 20px;
+      }
+
+      .card.green,
+      .card.blue,
+      .card.red {
+        display: none;
+    }
+
+   .opiniones-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 90%;
+          margin: 0 auto;
+        }
+      
+        .opinion-card {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 20px;
+        }
+
+        .card-container {
+            grid-template-columns: repeat(1, 1fr); /* Cambiamos a 1 columna para dispositivos móviles */
+          }
+          .card:hover {
+            transform: scale(1.1);
+            z-index: 2;
+          }
+
+          /* Estilos de las secciones 
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el desplazamiento suave 
+.menu__links a {
+    scroll-behavior: smooth;
+}*/
+      }
+      
+
+      
+      
   

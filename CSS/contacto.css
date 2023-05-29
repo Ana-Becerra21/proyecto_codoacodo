@@ -99,7 +99,7 @@ main{
 
 /* ----------------------- MEDIA QUERY CARD ALOJAMIENTO ----------------------*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .card-container {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }

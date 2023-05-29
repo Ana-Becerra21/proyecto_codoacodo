@@ -1,0 +1,304 @@
+@media (max-width: 1300px){
+    .menu__link{
+      padding: 9px;
+      height: 50%;
+      }
+    
+      #weather-container {
+      padding: 8px;
+      float: right; 
+      top: 0;
+      margin-left: 6px;
+      
+      }
+  
+    .weather-img{
+      padding-left: 2px;
+      right: 0;
+  
+    }
+    .menu__logo{
+      align-items: center;
+      padding-right: 20px;
+     }
+  
+     #one-page{
+      display: none;
+     }
+    
+  }
+  @media (max-width: 1224px){
+  
+    .menu__link{
+     padding: 8px;
+     
+     
+      }
+      .menu__logo{
+        padding-left: 2px;
+        padding-right: 7px;
+       }
+       .logo {
+        top: 0;
+        margin-right: 10px; 
+      }
+  
+      #one-page{
+        display: none;
+      }
+    
+    }
+    @media (max-width: 1026px){
+     
+         .menu__logo{
+           padding-left: 2px;
+           padding-right: 1px;
+           font-size: 2.5em;
+          }
+          .logo {
+           top: 0;
+           margin-right: 10px; 
+         }
+         
+         .weather-img{
+         display: none;
+      
+        }
+  
+        #one-page{
+          display: none;
+        }
+       
+    }
+
+    @media (max-width: 866px){
+            
+          .menu__logo{
+            padding-left: 2px;
+            padding-right: 1px;
+            font-size: 1em;
+           }
+           .logo {
+            top: 0;
+            margin-right: 5px; 
+          }
+          .menu__link{
+            padding: 4px;
+            
+          }
+
+          #temperature {
+            font-size: px;
+            font-weight: bold;
+            margin-right: 0;
+          }
+          
+          #description {
+            font-size: 10px;
+            margin-top: 1px;
+          }
+          
+          #humidity {
+            font-size: 10px;
+            margin-top: 1px;
+          }
+          #one-page{
+            display: none;
+          }
+  }
+   
+    
+  @media (max-width: 767px) {
+  
+     .menu__logo{
+      align-items: center;
+      padding-right: 20px;
+     }
+  
+      .menu__hamburguer{
+          display: flex;
+         
+      }
+  
+      .menu__item{
+          --clip:0;
+          overflow:hidden ;
+      }
+  
+      .menu__item--active{
+          --transform: rotate(0);
+          --background: rgb(57,106,177, 0.9);  /*click servicios */
+  
+      }
+  
+      .menu__item--show{
+        background-color: var(--background);
+        
+      }
+  
+      
+      .menu__links{
+          position: fixed;
+          max-width: 400px;
+          width: 100%;
+          top: 70px;
+          bottom: 0;
+          right: 0;
+          background-color: rgb(57,106,177, 0.9);    /*fondo menu hamburguesa */
+  
+          overflow-y: auto;
+          display: grid;
+          grid-auto-rows: max-content;
+          transform: translateX(100%)
+         
+         
+      }
+  
+      .menu__links--show{
+          transform: unset;
+          width: 100%;
+      }
+  
+      .menu__link{
+          padding: 25px 0;
+          padding-left: 30px;
+          height: auto;
+      }
+  
+      .menu__arrow{
+          margin-left: auto;
+          margin-right: 20px;
+      }
+  
+      .menu__nesting{
+          display: grid;
+          position: unset;
+          width: 50%;
+          transform: translateY(0);
+          height: 0;
+          transition: height 0.3s;
+          background-color: rgb(57,106,177, 09);      /*menu desplegable, fondo de destino, alojamiento*/
+      }
+  
+      .menu__link--inside{
+          width: 90%;
+          margin-left: auto;
+          border-left: 1px solid #798499;      /*borde izq del menu que despliega */
+        }
+        .menu {
+          height: 60px;
+        }
+  
+        #temperature {
+          font-size: 16px;
+          font-weight: bold;
+         
+        }
+        
+        #description {
+          font-size: 12px;
+          
+        }
+        
+       
+        .weather-img{
+          display: none;
+      
+        }
+       
+         
+        
+            .menu__hamburguer{
+                display: flex;
+               
+            }
+            #weather-container {
+              display: none;
+            }
+  
+            .logo {
+               
+              font-size: 16px;
+            }
+            
+            
+            .menu__logo {
+              font-size: 2em;
+              padding-right: 8px;
+              
+            }
+
+            
+                .carousel {
+                    width: 100%;
+                    height: 250px;
+                    margin-top: 60px;
+                    
+                }
+                
+                .carousel-caption h3 {
+                    font-size: 24px;
+                    
+                  }
+                  
+                  .carousel-caption p {
+                    font-size: 16px;
+                    
+                  }
+            
+                  .fotocar{
+                    width: 100%;
+                    height: 90%;
+                  }
+                  .logo{
+                    font-size: 10px;
+            
+                  }
+                  .menu__logo {
+                    font-size: 16px;
+                   
+                }
+            
+                .info h2{
+                    padding-top: 0px;
+                    font-size: 24px;
+                  }
+                  
+                  .info p {
+                    margin: 5px;
+                    font-size: 20px;
+                  }
+            
+                  .card.green,
+                  .card.blue,
+                  .card.red {
+                    display: none;
+                }
+            
+               .opiniones-container {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      width: 90%;
+                      margin: 0 auto;
+                    }
+                  
+                    .opinion-card {
+                      width: 100%;
+                      max-width: 400px;
+                      margin-bottom: 20px;
+                    }
+            
+                    .card-container {
+                        grid-template-columns: repeat(1, 1fr); /* Cambiamos a 1 columna para dispositivos móviles */
+                      }
+                      .card:hover {
+                        transform: scale(1.1);
+                        z-index: 2;
+                      }
+  
+        }
+
+
+
+

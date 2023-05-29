@@ -11,7 +11,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid&la
 
 
     const temperatura = data.main.temp;
-    const descripcion = data.weather[0].description;
+    const Hay  = data.weather[0].description;
     
     const humedad = data.main.humidity;
    
@@ -19,7 +19,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid&la
 
 
     temperatureElement.textContent = `Temperatura: ${temperatura}°C`;
-    descriptionElement.textContent = `Descripción: ${descripcion}`;
+    descriptionElement.textContent = `Descripción: ${Hay}`;
   
     humidityElement.textContent = `Humedad: ${humedad}%`;
    
