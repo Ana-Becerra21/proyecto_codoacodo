@@ -112,9 +112,9 @@ background-color: whitesmoke;
 
 .opiniones-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 5%;
-  max-width: 90vp;
+  grid-template-columns:repeat(3, 1fr);
+  column-gap: 15px;
+  max-width: 100%;
   margin: 40px;
 }
 
@@ -130,13 +130,14 @@ background-color: whitesmoke;
 .opinion-card img {
   border-radius: 100px 100px 100px 100px;
   max-height: 20vh;
-  max-width: 10vw;
+  max-width: 10vh;
   margin-bottom: 10px;
 }
 
 .opinion-card h2{
   font-size: 1em;
   color: black
+  
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
